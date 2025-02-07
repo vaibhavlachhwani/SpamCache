@@ -1,3 +1,4 @@
 spring.application.name=SpamCache
 
-spring.profiles.active = dev
+spam.delta.min = #min_spam_threshold
+spam.delta.max = #max_spam_threshold

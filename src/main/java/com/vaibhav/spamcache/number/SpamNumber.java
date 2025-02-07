@@ -13,6 +13,11 @@ public class SpamNumber {
     public SpamNumber() {
     }
 
+    public SpamNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+        this.spamReportCount = 0;
+    }
+
     public SpamNumber(String phoneNumber, int spamReportCount) {
         this.phoneNumber = phoneNumber;
         this.spamReportCount = spamReportCount;
