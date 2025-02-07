@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api")
+//@RequestMapping("/api")
 public class SpamNumberController {
     private final SpamNumberService spamNumberService;
 
@@ -15,8 +15,14 @@ public class SpamNumberController {
         this.spamNumberService = spamNumberService;
     }
 
-    @PostMapping("/report-spam/{phoneNumber}")
-    public ResponseEntity<String> reportSpam(@PathVariable String phoneNumber) {
+    @GetMapping("/")
+    public String test() {
+        System.out.println("-----------------------------------------------test called");
+        return "HelloWorld";
+    }
+
+    @PostMapping("/report-spam")
+    public ResponseEntity<String> reportSpam(@RequestBody String phoneNumber) {
         spamNumberService.reportSpam(phoneNumber);
         return ResponseEntity.ok(phoneNumber + " : status updated.");
     }

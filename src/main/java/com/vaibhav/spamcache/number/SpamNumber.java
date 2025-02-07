@@ -15,7 +15,7 @@ public class SpamNumber {
 
     public SpamNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-        this.spamReportCount = 0;
+        this.spamReportCount = 1;
     }
 
     public SpamNumber(String phoneNumber, int spamReportCount) {
