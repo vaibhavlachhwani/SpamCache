@@ -3,6 +3,8 @@ package com.vaibhav.spamcache.number;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
+import java.time.LocalDateTime;
+
 @Entity
 public class SpamNumber {
     @Id
@@ -10,12 +12,21 @@ public class SpamNumber {
 
     private int spamReportCount;
 
+    private LocalDateTime lastReportedAt;
+
     public SpamNumber() {
     }
 
     public SpamNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
         this.spamReportCount = 1;
+        this.lastReportedAt = LocalDateTime.now();
+    }
+
+    public SpamNumber(String phoneNumber, int spamReportCount, LocalDateTime lastReportedAt) {
+        this.phoneNumber = phoneNumber;
+        this.spamReportCount = spamReportCount;
+        this.lastReportedAt = lastReportedAt;
     }
 
     public SpamNumber(String phoneNumber, int spamReportCount) {
@@ -41,6 +52,14 @@ public class SpamNumber {
 
     public void setSpamReportCount(int spamReportCount) {
         this.spamReportCount = spamReportCount;
+    }
+
+    public LocalDateTime getLastReportedAt() {
+        return lastReportedAt;
+    }
+
+    public void setLastReportedAt(LocalDateTime lastReportedAt) {
+        this.lastReportedAt = lastReportedAt;
     }
 
     @Override

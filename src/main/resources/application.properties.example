@@ -1,4 +1,5 @@
 spring.application.name=SpamCache
 
-spam.delta.min = #min_spam_threshold
-spam.delta.max = #max_spam_threshold
+app.spam.base_threshold=1 //10
+app.spam.time_decay_factor= //0.05
+app.spam.report_weight_scaling= //1.5

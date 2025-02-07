@@ -1,0 +1,16 @@
+INSERT INTO SPAM_NUMBER (PHONE_NUMBER, SPAM_REPORT_COUNT, LAST_REPORTED_AT) VALUES
+                                                                                ('9123456789', 15, PARSEDATETIME('2025-02-06 14:23:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9876543210', 8, PARSEDATETIME('2025-02-07 09:15:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9112345678', 20, PARSEDATETIME('2025-02-05 16:45:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9198765432', 5, PARSEDATETIME('2025-02-07 11:30:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9123987654', 12, PARSEDATETIME('2025-02-06 18:20:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9187654321', 25, PARSEDATETIME('2025-02-04 20:10:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9176543210', 3, PARSEDATETIME('2025-02-07 08:00:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9165432109', 9, PARSEDATETIME('2025-02-06 22:45:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9154321098', 18, PARSEDATETIME('2025-02-03 17:30:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9143210987', 6, PARSEDATETIME('2025-02-07 12:10:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9132109876', 13, PARSEDATETIME('2025-02-05 10:15:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9121098765', 30, PARSEDATETIME('2025-02-01 09:05:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9110987654', 2, PARSEDATETIME('2025-02-07 14:55:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9109876543', 14, PARSEDATETIME('2025-02-06 16:25:00', 'yyyy-MM-dd HH:mm:ss')),
+                                                                                ('9190123456', 22, PARSEDATETIME('2025-02-02 19:40:00', 'yyyy-MM-dd HH:mm:ss'));
